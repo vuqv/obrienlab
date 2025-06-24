@@ -3,14 +3,14 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about-us",
-    title: "About Us",
+    id: "nav-about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/obrienlab/";
     },
   },{id: "nav-blog",
-          title: "blog",
+          title: "Blog",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -37,22 +37,22 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/obrienlab/repositories/";
           },
-        },{id: "nav-cv",
-          title: "cv",
+        },{id: "nav-ed",
+          title: "Ed",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/obrienlab/cv/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
+          title: "Teaching",
           description: "Materials for courses you taught. Replace this text with your description.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/obrienlab/teaching/";
           },
-        },{id: "nav-people",
-          title: "people",
+        },{id: "nav-group",
+          title: "Group",
           description: "members of the lab or group",
           section: "Navigation",
           handler: () => {
@@ -440,18 +440,20 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/obrienlab/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/obrienlab/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-congrats-dr-ian-sitarik-has-successfully-defended-his-thesis-titled-understanding-the-fundamental-principles-behind-the-influences-of-native-and-non-native-entanglements-on-protein-structure-function-and-misfolding",
+          title: 'Congrats Dr. Ian Sitarik has successfully defended his thesis titled “Understanding the fundamental...',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-protein-accidentally-lassos-itself-helping-explain-unusual-refolding-behavior-sci-adv-paper",
+          title: 'Protein accidentally lassos itself, helping explain unusual refolding behavior (Sci. Adv paper)',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/obrienlab/news/announcement_1/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
